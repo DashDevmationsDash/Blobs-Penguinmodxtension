@@ -13,6 +13,9 @@ Blocks:
    - [`(Text Of(BLOB))`](#text-ofblob---string)
    - [`(Type Of(BLOB))`](#type-ofblob---string)
    - [`(Size Of(BLOB))`](#size-ofblob---number)
+- [URLS](#urls)
+   - [`(URL Of(BLOB))`](#url-ofblob---string)
+   - [`(From URL(URL))`](#from-urlurl---blob)
 
 # Basic Blocks
 
@@ -54,3 +57,15 @@ Returns The Mime Type Of `(BLOB)`
 ![blobobb](Asset/Blocks/size.png)
 
 Returns How Big Is `(BLOB)`
+
+# URLS
+
+## `(URL Of(BLOB))` -> String
+![blobobb](Asset/Blocks/url.png)
+
+Returns The Url Of `(BLOB)`
+
+## `(From URL(URL)` -> Blob
+![blobobb](Asset/Blocks/fromurl.png)
+
+Fetches From `(URL)` And Returns As A Blob
