@@ -9,6 +9,10 @@ Blocks:
    - [`(Slice(BLOB)From(START)To(END))`](#sliceblobfromstarttoend---blob)
 - [Buffers](#buffers)
    - [`(Buffer Of(BLOB))`](#buffer-ofblob---array-buffer)
+- [Blob Atributes](#blob-atributes)
+   - [`(Text Of(BLOB))`](#text-ofblob---string)
+   - [`(Type Of(BLOB))`](#type-ofblob---string)
+   - [`(Size Of(BLOB))`](#size-ofblob---number)
 
 # Basic Blocks
 
@@ -32,4 +36,21 @@ Returns A New Blob Thats All The Characters Of `(BLOB)` That Goes From `(START)`
 ## `(Buffer Of(BLOB))` -> Array Buffer
 ![blobobb](Asset/Blocks/bufferof.png)
 
-Returns The Blob As An Array Buffer
+Returns `(BLOB)` As An Array Buffer
+
+# Blob Atributes
+
+## `(Text Of(BLOB))` -> String
+![blobobb](Asset/Blocks/textof.png)
+
+Returns The Plaintext Of `(BLOB)`
+
+## `(Type Of(BLOB))` -> String
+![blobobb](Asset/Blocks/type.png)
+
+Returns The Mime Type Of `(BLOB)`
+
+## `(Size Of(BLOB))` -> Number
+![blobobb](Asset/Blocks/size.png)
+
+Returns How Big Is `(BLOB)`
