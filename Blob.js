@@ -65,7 +65,7 @@
   }
   class Extension {
     constructor() {
-      vm.registerSerializer('dvBlob',(blobobb) => {
+      vm.runtime.registerSerializer('dvBlob',(blobobb) => {
         return blobobb.text
       }, (string) => {
         return new dvBlob(new Blob([string]))
