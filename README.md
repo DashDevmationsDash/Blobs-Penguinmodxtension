@@ -7,6 +7,8 @@ Blocks:
    - [`(New Blob(ARRAY))`](#new-blobarray---blob)
    - [`(New Blob(ARRAY)Type(TYPE))`](#new-blobarraytypetype---blob)
    - [`(Slice(BLOB)From(START)To(END))`](#sliceblobfromstarttoend---blob)
+- [Buffers](#buffers)
+   - [`(Buffer Of(BLOB))`](#buffer-ofblob---array-buffer)
 
 # Basic Blocks
 
@@ -24,3 +26,10 @@ Lets You Create A Blob From The Array `(ARRAY)` With Type `(TYPE)`
 ![blobobb](Asset/Blocks/slice.png)
 
 Returns A New Blob Thats All The Characters Of `(BLOB)` That Goes From `(START)` To `(END)`
+
+# Buffers
+
+## `(Buffer Of(BLOB))` -> Array Buffer
+![blobobb](Asset/Blocks/bufferof.png)
+
+Returns The Blob As An Array Buffer
