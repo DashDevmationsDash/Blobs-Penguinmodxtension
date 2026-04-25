@@ -23,19 +23,6 @@
       });
     });
   };
-  const Template = {
-    Block: {
-      blockType: Scratch.BlockType.REPORTER,
-      blockShape: 'dvBlobs-dovebird',
-      forceOutputType: 'dvBlobs'
-    },
-    Argument: {
-      shape: 'dvBlobs-dovebird',
-      check: ['dvBlobs'],
-      exemptFromNormalization: true
-    },
-    Pause: "---"
-  }
   class dvBlob {
     constructor(blob = new Blob([])) {
       this.blob = blob
@@ -63,8 +50,23 @@
       return new dvBlob(new Blob([]))
     }
   }
+  const Template = {
+    Block: {
+      blockType: Scratch.BlockType.REPORTER,
+      blockShape: 'dvBlobs-dovebird',
+      forceOutputType: 'dvBlobs'
+    },
+    Argument: {
+      shape: 'dvBlobs-dovebird',
+      check: ['dvBlobs'],
+      exemptFromNormalization: true
+    },
+    Pause: "---",
+    Type: dvBlob
+  }
   class Extension {
     constructor() {
+      vm.dvBlobs = Template
       vm.runtime.registerSerializer('dvBlob',(blobobb) => {
         return blobobb.text
       }, (string) => {
